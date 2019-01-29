@@ -4,7 +4,7 @@ import java.awt.peer.TrayIconPeer;
 
 import javax.swing.event.ListSelectionEvent;
 
-import Java_algroithm.Strategy;
+import Java_algoirthm.Strategy;
 import Part_1.practice_1_1_13;
 
 public class Main {

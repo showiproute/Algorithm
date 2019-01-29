@@ -5,10 +5,10 @@ import java.util.function.IntPredicate;
 
 import javax.xml.stream.events.StartDocument;
 
-import Java_algroithm.ListArray;
-import Java_algroithm.OutOfBoundaryException;
-import Java_algroithm.Strategy;
-import Java_algroithm.StudentStrategy;
+import Java_algoirthm.ListArray;
+import Java_algoirthm.OutOfBoundaryException;
+import Java_algoirthm.Strategy;
+import Java_algoirthm.StudentStrategy;
 
 import java.lang.Integer;
 import java.lang.Math;

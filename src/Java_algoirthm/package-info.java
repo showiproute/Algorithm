@@ -5,4 +5,4 @@
  * @author liangyintian
  *
  */
-package Java_algroithm;
+package Java_algoirthm;

@@ -1,6 +1,6 @@
 package My_algroithm;
 
-import Java_algroithm.Strategy;
+import Java_algoirthm.Strategy;
 import Part_1.Student;
 
 public class My_StudentStrategy implements My_Strategy{

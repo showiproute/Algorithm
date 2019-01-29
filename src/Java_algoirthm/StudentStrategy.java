@@ -1,4 +1,4 @@
-package Java_algroithm;
+package Java_algoirthm;
 
 import Part_1.Student;
 
