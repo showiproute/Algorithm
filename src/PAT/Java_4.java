@@ -11,6 +11,7 @@ public class Java_4 {
 		char hour;
 		char minute;	
 		boolean flag=true;
+		boolean flag2=true;
 		Scanner scanner = new Scanner(System.in);
 		String first= scanner.nextLine();
 		String second= scanner.nextLine();
@@ -30,8 +31,10 @@ public class Java_4 {
 			}else {
 				if(c>='0'&&c<='9'&&c==second.charAt(i)) {
 					System.out.print("0"+c+":");
+					break;
 				}else if(c>='A'&&c<='N'&&c==second.charAt(i)) {
 					System.out.print((c-55)+":");
+					break;
 				}
 			}
 			
@@ -46,6 +49,7 @@ public class Java_4 {
 					}else {
 						System.out.print("0"+i);
 					}
+					break;
 				}
 			}
 			if(c>='A'&&c<='Z') {
@@ -55,20 +59,10 @@ public class Java_4 {
 					}else {
 						System.out.print("0"+i);
 					}
-				}
-			}
-			if(c>='0'&&c<='9') {
-				if(c==fourth.charAt(i)) {
-					if(i>=10) {
-						System.out.print(i);
-					}else {
-						System.out.print("0"+i);
-					}
+					break;
 				}
 			}
 		}
-		
-		
 		
 	}
 	
