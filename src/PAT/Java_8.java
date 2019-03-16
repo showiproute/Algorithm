@@ -108,15 +108,15 @@ public class Java_8 {
 		
 		if(mapYi.get("B")>=mapYi.get("C")) {
 			if(mapYi.get("B")>=mapYi.get("J")) {
-				System.out.print("B"+" ");
+				System.out.print("B");
 			}else {
-				System.out.print("J"+" ");
+				System.out.print("J");
 			}
 		}else {
 			if(mapYi.get("C")>=mapYi.get("J")) {
-				System.out.print("C"+" ");
+				System.out.print("C");
 			}else {
-				System.out.print("J"+" ");
+				System.out.print("J");
 			}
 		}
 		
