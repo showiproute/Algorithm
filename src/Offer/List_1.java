@@ -2,6 +2,7 @@ package Offer;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 /*
  * 
@@ -9,33 +10,41 @@ import java.util.List;
  */
 
 public class List_1 {
-    public static ArrayList<Integer> printListFromTailToHead(List listNode) {
-    	int[] array=new int[listNode.size()];
-    	int i=listNode.size()-1;
-    	for (Object node : listNode) {
-			array[i]=(Integer)node;
-    		i--;
-		}
-    	
-    	ArrayList<Integer> arrayList=new ArrayList<>();
-    	for (int value : array) {
-			arrayList.add(value);
-		}
-    	
-    	
-    	return arrayList;
-
-    }
-	
-    public static void main(String[] args) {
+	public static class ListNode{
+		int val;
+		ListNode next=null;
 		
-    	ArrayList<Integer> list=new ArrayList<>();
-    	list.add(1);
-    	list.add(2);
-    	list.add(3);
-    	System.out.println(printListFromTailToHead(list));
-    	
-    	
+		ListNode(int val){
+			this.val=val;
+		}
+	}
+
+	public static ArrayList<Integer> printListFromTailToHead(ListNode listNode){
+		Stack<Integer> stack=new Stack<>();
+		while(listNode!=null) {
+			stack.push(listNode.val);
+			listNode=listNode.next;
+		}
+		
+		ArrayList<Integer> arrayList=new ArrayList<>();
+		while(!stack.isEmpty()) {
+			arrayList.add(stack.pop());
+		}
+		
+		
+		return arrayList;
+	}
+	
+	 public static void main(String[] args) {
+		ListNode listNode = new ListNode(1);
+		ListNode listNode2 = new ListNode(2);
+		ListNode listNode3 = new ListNode(3);
+		listNode3.next=null;
+		
+		 listNode.next=listNode2;
+		 listNode2.next=listNode3;
+		 
+		 
 	}
 	
     
