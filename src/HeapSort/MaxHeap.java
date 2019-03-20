@@ -1,5 +1,6 @@
 package HeapSort;
 
+import java.lang.reflect.AnnotatedArrayType;
 import java.util.Arrays;
 
 public class MaxHeap {
@@ -61,6 +62,26 @@ public class MaxHeap {
 	}
 	
 	
+	private void heapDelete(int i) {
+		int temp=A[i];
+		A[i]=A[heapsize];
+		A[heapsize]=temp;
+		heapsize-=1;
+		
+		System.out.println(Arrays.toString(this.A));
+		int key=A[i];
+		if(key<=A[parent(i)]) {
+			maxHeapify(i);
+		}else {
+			while(i>0 && A[parent(i)]<key) {
+				int temp2=A[i];
+				A[i]=A[parent(i)];
+				A[parent(i)]=temp2;
+				i=parent(i);
+			}
+		}
+		
+	}
 	
 	public static void main(String[] args) {
 		
@@ -70,6 +91,10 @@ public class MaxHeap {
 		maxHeap.heapSort(a);
 		System.out.println("Output:"+Arrays.toString(a));
 		
+		maxHeap.heapDelete(2);
+
+		
+
 	}
 	
 }
