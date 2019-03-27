@@ -44,10 +44,17 @@ public class QuickSort_Random {
 	}
 	
 	public static void main(String[] args) {
-		int[] array=new int[]{2,8,7,1,3,5,6,4};
+		int bound=new Random().nextInt(1000000-100000)+100000;
+		int[] array=new int[bound];
 		
+		for(int i=0;i<bound;i++) {
+			array[i]=new Random().nextInt(bound);
+		}
+		
+		long startTime=System.currentTimeMillis();
 		QuickSort(array, 0, array.length-1);
-		System.out.println(Arrays.toString(array));
+		long endTime=System.currentTimeMillis();
+		System.out.println(endTime-startTime+"ms");
 	}
 	
 }
