@@ -1,7 +1,5 @@
 package Offer;
 
-import java.util.HashMap;
-import java.util.Map.Entry;
 
 /*
  * 在数组中的两个数字，
