@@ -29,13 +29,11 @@ public class BinaryTree_Search {
 	}
 	
 	public static void InOrderTreversal(TreeNode root) {
-		if(root.left!=null) {
-			InOrderTreversal(root.left);
-		}
+		if(root==null) 
+			return;
+		InOrderTreversal(root.left);
 		arrayList.add(root.val);
-		if(root.right!=null) {
-			InOrderTreversal(root.right);
-		}		
+		InOrderTreversal(root.right);
 	}
 	
 	
