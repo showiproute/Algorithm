@@ -46,6 +46,8 @@ public class BinaryTree_Search {
 		root.left=node2;
 		root.right=node3;
 		node2.left=node4;
+		
+		
 		node2.right=node5;
 		
 		System.out.println(FindMinValue(root));
