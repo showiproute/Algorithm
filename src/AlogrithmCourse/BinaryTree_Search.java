@@ -53,5 +53,10 @@ public class BinaryTree_Search {
 		System.out.println(FindMinValue(root));
 	}
 	
+	/*
+	 * 伪代码 实现思路类似于 二叉树中序遍历
+	 * 
+	 */
+	
 	
 }
