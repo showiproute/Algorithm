@@ -29,9 +29,7 @@ public class LinkedList_1 {
         		return null;
         	}
         }
-    	
         fast=pHead;
-        
         while(fast!=slow) {
         	fast=fast.next;
         	slow=slow.next;
