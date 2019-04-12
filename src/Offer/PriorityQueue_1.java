@@ -35,7 +35,6 @@ public class PriorityQueue_1 {
         }else {
         	return new Double(minHeap.peek());
         }
-    	
     }
 	
 }
