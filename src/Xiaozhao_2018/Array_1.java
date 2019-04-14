@@ -1,4 +1,4 @@
-package PinDuoDuo;
+package Xiaozhao_2018;
 
 import java.util.Scanner;
 
