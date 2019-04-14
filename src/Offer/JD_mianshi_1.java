@@ -7,9 +7,9 @@ import java.util.Scanner;
 
 public class JD_mianshi_1 {
 
-	public static String solution(int n,long V,long[] a,long[] b) {
-		long[] rate=new long[n];
-		long sum=0;
+	public static String solution(int n,double V,double[] a,double[] b) {
+		double[] rate=new double[n];
+		double sum=0;
 		
 		for(int i=0;i<n;i++) {
 			sum+=a[i];
@@ -19,11 +19,11 @@ public class JD_mianshi_1 {
 			rate[i]=a[i]/sum;
 		}
 		
-		long result=(long) 0.0;
-		long store_v=V;
+		double result=0.0;
+		double store_v=V;
 	
 		while(V>0) {
-			ArrayList<Long> tmp=new ArrayList<>();
+			ArrayList<Double> tmp=new ArrayList<>();
 			for(int i=0;i<n;i++) {
 				tmp.add(b[i]*rate[i]);				
 			}
@@ -42,7 +42,7 @@ public class JD_mianshi_1 {
 			}			
 			
 			double counts=0.0;
-			for (Long item : tmp) {
+			for (Double item : tmp) {
 				counts+=item;
 			}
 			
@@ -59,21 +59,19 @@ public class JD_mianshi_1 {
 	
 	public static void main(String[] args) {
 		
-//		Scanner sc=new Scanner(System.in);
-//		int n  = sc.nextInt();
-//		double V = sc.nextDouble();
-//		double[] a=new double[n];
-//		for(int i=0;i<n;i++) {
-//			a[i]=sc.nextDouble();
-//		}
-//		double[] b=new double[n];
-//		for(int i=0;i<n;i++) {
-//			b[i]=sc.nextDouble();
-//		}
+		Scanner sc=new Scanner(System.in);
+		int n  = sc.nextInt();
+		double V = sc.nextDouble();
+		double[] a=new double[n];
+		for(int i=0;i<n;i++) {
+			a[i]=sc.nextDouble();
+		}
+		double[] b=new double[n];
+		for(int i=0;i<n;i++) {
+			b[i]=sc.nextDouble();
+		}
 		
-		long[] a= {1,1,1};
-		long[] b= {30,40,50};
-		System.out.println(solution(3, (long)100.0, a, b));
+		System.out.println(solution(n, V, a, b));
 	}
 	
 }
