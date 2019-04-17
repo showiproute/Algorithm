@@ -1,12 +1,13 @@
 package AlogrithmCourse;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+
 
 public class DynamicProgramming {
 
 	public static int[][] c;
 	public static String[][] b;
+	public static StringBuilder result=new StringBuilder();
 	
 	public static void LCS_LENGTH(String X,String Y) {		
 		X=init(X);
@@ -49,7 +50,7 @@ public class DynamicProgramming {
 			return;
 		if(b[i][j].equals("LU")) {
 			PRINT_LCS(b,X,i-1,j-1);
-			System.out.println(X.charAt(i));
+			result.append(X.charAt(i));
 		}else if(b[i][j].equals("U")) {
 			PRINT_LCS(b,X,i-1,j);
 		}else {
@@ -65,11 +66,11 @@ public class DynamicProgramming {
 	}
 	
 	public static void main(String[] args) {
-		String X="ABCBDAB";
-		String Y="BDCABA";
+		String X="aabbdab";
+		String Y="bdcabd";
 		
 		LCS_LENGTH(X,Y);
-//		System.out.println(X.charAt(1));
+		System.out.println(result.toString());
 
 		
 	}
