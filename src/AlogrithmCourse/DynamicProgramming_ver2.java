@@ -40,7 +40,7 @@ public class DynamicProgramming_ver2 {
 		if(i==0 || j==0)
 			return;
 		if(X.charAt(i)==Y.charAt(j)) {
-			PRINT_LCS(c,X,i-1,Y,j-1);
+			PRINT_LCS(c,X,i-1,Y,j-1);     
 			result.append(X.charAt(i));
 		}else if(c[i-1][j]>=c[i][j-1]) {
 			PRINT_LCS(c,X,i-1,Y,j);
