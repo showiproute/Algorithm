@@ -1,7 +1,7 @@
 package AlogrithmCourse;
 
 
-//不记录箭头
+//不记录箭头 只用c数组
 public class DynamicProgramming_ver2 {
 	public static int[][] c;
 	public static StringBuilder result=new StringBuilder();
