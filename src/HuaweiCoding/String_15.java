@@ -5,6 +5,9 @@ import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+/*
+ * Character.isLetter
+ */
 public class String_15 {
 
 	public static String stringTrans(String inputLine) {
