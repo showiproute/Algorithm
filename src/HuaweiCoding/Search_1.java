@@ -45,8 +45,8 @@ public class Search_1 {
 			}
 		});
 		
-		System.out.print(totals+" "+storedList.get(num-1)+" ");
-		
+		System.out.println(totals);
+		System.out.println(storedList.get(num-1));
 	}
 	
 	public static void main(String[] args) {
