@@ -55,16 +55,10 @@ public class DynamicProgramming_1 {
 						if(newWeight[i]<=j) {
 							dp[i][j]=Math.max(dp[i-1][j], dp[i-1][j-newWeight[i]]+newValue[i]);
 						}
-//						else {
-//							dp[i][j]=dp[i-1][j];
-//						}
 					}else {
 						if((newWeight[i]+newWeight[newQ[i]])<=j) {
 							dp[i][j]=Math.max(dp[i-1][j], dp[i-1][j-newWeight[i]]+newValue[i]);
 						}
-//						else {
-//							dp[i][j]=dp[i-1][j];
-//						}
 					}
 				}
 				maxValue=dp[i][j];
