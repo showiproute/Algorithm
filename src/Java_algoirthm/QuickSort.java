@@ -26,12 +26,9 @@ public class QuickSort {
 		sort(array, 0, index-1);
 		sort(array, index+1, high);
 	}
-	
-	
 	public static void main(String[] args) {
 		int[] array= {23,4,6,1,55};
 		sort(array, 0, array.length-1);
 		System.out.println(Arrays.toString(array));
 	}
-
 }
