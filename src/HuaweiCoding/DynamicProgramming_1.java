@@ -77,7 +77,6 @@ public class DynamicProgramming_1 {
 		int[] v=new int[m];
 		int[] p=new int[m];
 		int[] q=new int[m];
-		
 		for(int i=0;i<m;i++) {
 			v[i]=sc.nextInt();
 			p[i]=sc.nextInt()*v[i];

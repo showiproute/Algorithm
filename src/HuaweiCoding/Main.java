@@ -18,12 +18,14 @@ public class Main {
 	}
 	
 	public static void main(String[] args) {
-		Main obj=new Main();
-		Scanner sc=new Scanner(System.in);
-		while(sc.hasNext()) {
-			System.out.println(obj.reverse(sc.nextLine()));
-		}
-		
+//		Main obj=new Main();
+//		Scanner sc=new Scanner(System.in);
+//		while(sc.hasNext()) {
+//			System.out.println(obj.reverse(sc.nextLine()));
+//		}
+
+		int[][] array=new int[4][3];
+		System.out.println(array.length);
 		
 		
 	}
