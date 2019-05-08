@@ -3,7 +3,6 @@ package HuaweiCoding;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
-import java.util.TreeMap;
 
 public class String_19 {
 
@@ -82,17 +81,13 @@ public class String_19 {
 			return value;
 	}
 	
-	
-	
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		while(sc.hasNext()) {
 			String str1 = sc.next();
 			String str2 = sc.next();
-			ProcessString(str1, str2);
-			
-		}
-		
+			ProcessString(str1, str2);		
+		}	
 	}
 	
 }
