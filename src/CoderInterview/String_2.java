@@ -11,7 +11,6 @@ public class String_2 {
     		charArray[charArray.length-i-1]=charArray[i];
     		charArray[i]=temp;
     	}
-    	
     	return new String(charArray);
     }
 	
